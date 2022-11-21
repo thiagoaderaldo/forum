@@ -10,4 +10,7 @@ public interface TopicoRepository extends JpaRepository<Topico, Long>{
 
 	List<Topico> findByCursoNome(String nomeCurso);
 
+//	Exemplo de método fora do padrão JPA:
+//	@Query("SELECT t FROM Topico t WHERE t.curso.nome = :nomeCurso")
+//	List<Topico> carregarPorNomeDoCurso(String nomeCurso);
 }
