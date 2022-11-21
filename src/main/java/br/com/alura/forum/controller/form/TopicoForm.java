@@ -13,12 +13,12 @@ public class TopicoForm {
 
 	@NotNull
 	@NotEmpty
-	@Length(min= 5)
+	@Length(min= 5, max= 100)
 	private String titulo;
 	
 	@NotNull
 	@NotEmpty
-	@Length(min= 5)
+	@Length(min= 5, max= 250)
 	private String mensagem;
 	
 	@NotNull
